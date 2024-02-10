@@ -9,12 +9,78 @@ body {
     color: #e5e7eb;
 }
 
+.header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ height: 60px;
+ background-color: #1f2937;
+ color: #e5e7eb;
+ font-size: 18px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.links a {
+   margin-left: 20px; 
+   text-decoration: none;
+   color: #e5e7eb;
+}
+
+.links a:hover {
+    color: #ffc107
+}
+
 h1 {
     font-size: 48px;
     font-weight: 700;
     color:#f9faf8;
 }
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+ 
+
+}
+
+/*li {
+  
+  justify-content: flex-end;
+}*/
+
  button {
     background-color: #3882f6;
     
+ }
+
+ blockquote {
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+ }
+
+ .quote {
+    background-color: #e5e7eb;
+ }
+
+ .footer {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
