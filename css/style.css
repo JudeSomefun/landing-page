@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
     color: #e5e7eb;
 }
-
+/*Header*/
 .header {
  display: flex;
  justify-content:space-around;
@@ -40,7 +40,7 @@ body {
 .links a:hover {
     color: #ffc107
 }
-
+/*Hero*/
 .hero {
     display: flex;
     width: 100%;
@@ -87,7 +87,6 @@ ul {
     list-style-type: none;
 }
 
-
  button {
     background-color: #3882f6;
     color: #fff;
@@ -98,7 +97,36 @@ ul {
     padding: 8px 16px;
     
  }
+/*Information*/
 
+ .info {
+    text-align: center; 
+    display: flex;
+    justify-content: space-evenly;
+    gap: 24px;
+ }
+
+ .info p {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+ }
+
+ .info img {
+    border-radius: 12px;
+    height: 100px;
+    width: 100px;
+    border: #3882f6;
+    
+ }
+
+ figcaption {
+    font-size: 12px;
+    color: #1f2937;
+ }
+
+
+/*Quote*/
  blockquote {
     color: #1f2937;
     font-size: 36px;
