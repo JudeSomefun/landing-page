@@ -104,9 +104,10 @@ ul {
    justify-content: center;
    gap: 24px;
    padding: 12px;
-   height: 250px;
+   height: 250px;}*/
+
    
-}
+
 
 
 #title {
@@ -156,11 +157,13 @@ ul {
    margin-bottom: 20px;
    color: #1f2937;
  }
- 
+
+ /*Pictures*/
  .pictures {
    display: flex;
    justify-content: center; /* Center items horizontally */
-   
+   max-width: 75%;
+
    
    
  }
@@ -191,7 +194,10 @@ ul {
    flex-direction: column;
    background-color: #e5e7eb;
    color: #1f2937;
-   height: 200px;
+   height: 300px;
+   justify-content: center;
+   align-items: center;
+  
 ;
 }
  .quote {
@@ -201,7 +207,13 @@ ul {
     font-weight: 300;
     font-style:italic;
     max-width: 30%;
-    
+ }
+
+ .source {
+   display: flex;
+   font-weight: 800;
+   justify-content: right;
+   
  }
 
 
