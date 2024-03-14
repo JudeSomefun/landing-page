@@ -219,10 +219,19 @@ ul {
  }
 
  .cta-section {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
   padding: 50px 0;
 }
 
+.cta-box {
+  display: flex;
+  background-color: #3882f6;
+  color:#e5e7eb;
+  border-radius: 10px;
+}
 .cta-headline {
   font-size: 36px;
   margin-bottom: 15px;
@@ -234,7 +243,7 @@ ul {
 }
 
 .cta-button {
-  background-color: #3498db;
+  background-color: #3882f6;
   color: #fff;
   padding: 15px 30px;
   border: none;
