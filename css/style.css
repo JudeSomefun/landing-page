@@ -1,7 +1,8 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
-    min-height: 100vh;
+    padding: 0;
+    background-color: #1f2937;
   
 }
 /*Header*/
@@ -17,176 +18,93 @@ body {
  
 }
 
-.logo {
+.header-logo {
     margin-left: 32px;
+    padding-left: 32px;
     align-items: center;
     font-size: 24px;
     font-weight: 700;
     color: #F9FAF8;
 }
 
-.links {
+.header-links {
     display: flex;
     align-items: center;
     margin-right: 20px;
+    justify-content: flex-end;
 }
 
-.links a {
+.header-links a {
    margin-left: 20px; 
    text-decoration: none;
    color: #e5e7eb;
 }
 
-.links a:hover {
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.header-links a:hover {
     color: #ffc107
 }
 /*Hero*/
 .hero {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #1f2937;
-    color: #e5e7eb;
-    font-size: 18px;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+  justify-content: space-between;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
-  margin-left: 32px;
-  width: 300px;
-  text-align:left;
+  flex-wrap: nowrap;    
+  width: 55%;
+  padding-left: 300px;
+  padding-top: 25px;
 }
 
-.hero-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
-    flex-basis: 30%;
-    height: 200px;
-    text-align: center;
-    padding: 0;
+.hero-text h1 {
+  font-size: 48px;
+  color:#e5e7eb;
+  max-width: 370px;
 }
 
-.hero-box {
-  text-align: center;
-  width: 80%;
-  height: inherit;
+.hero-subtext {
+  margin: 5px;
+  color: #e5e7eb;
+  max-width: 60%;
+}
+ 
+
+.sign-up-button {
+  background-color: #3882F6;
+  color: white;
+  width: 100px;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
 }
 
-h1 {
-    font-size: 48px;
-    font-weight: 700;
-    color:#f9faf8;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-}
-
- button {
-    background-color: #3882f6;
-    color: #fff;
-    border-radius: 5px;
-    font-weight: 700;
-    border: 0;
-    width: 100px;
-    padding: 8px 16px;
+.hero-image {
+  background-color: #e5e7eb;
+  width: 45%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  padding-left: 0;
     
- }
-/*Information*/
-/*.info-container {
-   display: flex;
-   text-align: center;
-   justify-content: center;
-   gap: 24px;
-   padding: 12px;
-   height: 250px;}*/
-
-   
-
-
-
-#title {
-   margin-bottom: 32px;
-   font-size: 36px;
-   font-weight: 900;
-   color: #1f2937;
-   display: flex;
-   justify-content: center;
-   align-items: center;
 }
- .info {
-    text-align: center; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 52px;
-    max-width: 100px;
- }
 
- .info img {
-    border-radius: 12px;
-    height: 100px;
-    width: 100px;
-    border: #3882f6;
-    
- }
-.text {
-   display: flex;
-   flex-direction: column; 
-   font-size: 12px;
-   color: #1f2937;
-   text-align: center;
- }*/
+/*information*/
+.info-container {
+  background-color: #F9FAF8;
+}
 
- .info-container {
-   display: flex;
-   flex-direction: column;
-   width: 80%;
-
-   
- }
- 
- .title {
-   text-align: center;
-   font-size: 36px;
-   font-weight: 900;
-   margin-bottom: 20px;
-   color: #1f2937;
- }
-
- /*Pictures*/
- .pictures {
-   display: flex;
-   justify-content: center; /* Center items horizontally */
-   max-width: 75%;
-
-   
-   
- }
- 
- .picture {
-   margin: 0 10px; /* Add margin between pictures */
-   text-align: center;
- }
- 
- .picture img {
-   max-width: 60%;
-   height: auto;
-   border-radius: 12px;
-   border: #3882f6;
- }
- 
- .caption {
-   margin-top: 10px;
-   font-size: 14px;
-   color: #1f2937;
- }
- 
 
 
 /*Quote*/
@@ -199,7 +117,6 @@ ul {
 
    justify-content: center;
    align-items: center;
-  
 ;
 }
  .quote {
@@ -219,19 +136,10 @@ ul {
  }
 
  .cta-section {
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
   text-align: center;
   padding: 50px 0;
 }
 
-.cta-box {
-  display: flex;
-  background-color: #3882f6;
-  color:#e5e7eb;
-  border-radius: 10px;
-}
 .cta-headline {
   font-size: 36px;
   margin-bottom: 15px;
@@ -243,7 +151,7 @@ ul {
 }
 
 .cta-button {
-  background-color: #3882f6;
+  background-color: #3498db;
   color: #fff;
   padding: 15px 30px;
   border: none;
@@ -252,6 +160,7 @@ ul {
   cursor: pointer;
 }
 
+
  .footer {
     height: 72px;
     display: flex;
@@ -259,5 +168,4 @@ ul {
     align-items: center;
     background-color: #1f2937;
     color: #e5e7eb;
-   
  }
