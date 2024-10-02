@@ -7,8 +7,20 @@ body {
     flex-direction: column;
     background-color: #1f2937;
 }
+
+button {
+  color: #F9FAF8;
+  background-color: #3882F6;
+  width: 150px;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 /*Header*/
-.header {
+header {
  display: flex;
  justify-content:space-around;
  align-items: center;
@@ -21,9 +33,7 @@ body {
 }
 
 .header-logo {
-    margin-left: 32px;
-    padding-left: 32px;
-    align-items: center;
+    margin-right: auto;
     font-size: 24px;
     font-weight: 700;
     color: #F9FAF8;
@@ -50,51 +60,47 @@ ul {
 .header-links a:hover {
     color: #ffc107
 }
+
+section {
+  display: flex;
+  min-height: 300px;
+  padding: 24px 15%;
+} 
+
 /*Hero*/
 .hero {
-  height: 450px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   padding: 24px 15%;
   justify-content: space-between;
-  gap: 20px;
-  background-color: #1f2937;
-  
+  color: white;
   align-items: center;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;    
-  width: 55%;
-  padding-left: 300px;
-  padding-top: 25px;
+  flex: 1 1 auto;
 }
 
-.hero-text h1 {
+.hero-title {
   font-size: 48px;
   color:#e5e7eb;
-  max-width: 370px;
 }
 
 .hero-subtext {
-  
+  font-size: 18px;
   color: #e5e7eb;
   
 }
  
 
 .sign-up-button {
-  background-color: #3882F6;
-  color: white;
-  width: 150px;
-  border-radius: 10px;
-  padding: 5px;
-  font-weight: bold;
+
   align-self: flex-start;
 }
+
+
 
 .hero-image {
   background-color: #e5e7eb;
