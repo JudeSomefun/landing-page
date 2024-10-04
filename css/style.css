@@ -119,6 +119,42 @@ section {
 .info-container {
   background-color: #F9FAF8;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-title{
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.picture {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pic-image{
+  width: 200px;
+  height: 200px;
+  border: 6px solid #3882F6;
+  border-radius: 8px;
+}
+
+.caption {
+  width: 200px;
+  font-size: 18px;
+  color: #1f2937;
+  text-align: center;
 }
 
 
@@ -178,6 +214,7 @@ section {
 .cta-container {
   text-align: left;
 }
+
 .cta-headline {
   font-size: 24px;
   font-weight: bold;
@@ -190,16 +227,16 @@ section {
 }
 
 .cta-button {
-  background-color: #3498db;
-  color: #fff;
-  padding: 16px 15%;
-  border: 2px solid #ffffff;
-  border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
-  margin: auto;
+  text-align: left;
+  color: #F9FAF8;
+  background-color: #3882F6;
+  width: 150px;
+  border:2px solid #F9FAF8;
+  border-radius: 10px;
+  font-weight: bold;
 }
-
 
  .footer {
     height: 72px;
